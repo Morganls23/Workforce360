@@ -9,6 +9,7 @@ PF_USER_PWD=2FederateM0re
 
 # PD Variables
 USER_BASE_DN=dc=workforce360.com
+MAX_HEAP_SIZE=768m
 
 # AD Variables
 # Used in the PF AD Datastore \ PCV && PingDataSync
@@ -25,4 +26,4 @@ MYSQL_ROOT_PASSWORD=2Federate
 PING_CENTRAL_OIDC_ENABLED=true
 PING_CENTRAL_CLIENT_ID=PingCentral
 PING_CENTRAL_CLIENT_SECRET=2FederateM0re
-PF_ISSUER=https://docker.workforce360.com:9031
+PF_ISSUER=https://workmorg.ping-eng.com
