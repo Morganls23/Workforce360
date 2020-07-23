@@ -13,8 +13,8 @@ MAX_HEAP_SIZE=768m
 
 # AD Variables
 # Used in the PF AD Datastore \ PCV && PingDataSync
-AD_DC_HOST=int-ad.solution-wf.ping-eng.com
-AD_BASE_DN=dc=workforce360,dc=com
+AD_DC_HOST=10.101.44.201
+AD_BASE_DN=DC=morganping,DC=internal
 
 # PingCentral Variables
 # These values are placed into the `application.properties` file
