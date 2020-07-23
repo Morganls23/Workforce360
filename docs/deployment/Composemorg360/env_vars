@@ -9,6 +9,7 @@ PF_USER_PWD=2FederateM0re
 
 # PD Variables
 USER_BASE_DN=dc=workforce360.com
+MAX_HEAP_SIZE=768m
 
 # AD Variables
 # Used in the PF AD Datastore \ PCV && PingDataSync
