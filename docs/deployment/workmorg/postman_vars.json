@@ -44,7 +44,7 @@
 		},
 		{
 			"key": "pingCentralHost",
-			"value": "https://workmorg.ping-eng.com:9022",
+			"value": "https://workmorg.ping-eng.com",
 			"enabled": true
 		}
 	],
