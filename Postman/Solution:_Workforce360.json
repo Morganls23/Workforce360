@@ -1964,6 +1964,49 @@
                   "response": []
                 },
                 {
+                  "name": "Create Group - PFExpressionAdminGroup",
+                  "event": [
+                    {
+                      "listen": "test",
+                      "script": {
+                        "id": "ace4c1f4-80ea-4cfe-aca0-6195bd44140c",
+                        "exec": [
+                          "pm.test(\"Object Created\", function () {",
+                          "    pm.response.to.have.status(\"Created\");",
+                          "});"
+                        ],
+                        "type": "text/javascript"
+                      }
+                    }
+                  ],
+                  "_postman_id": "fac78bea-5ade-4391-97b1-c7a21d8276c1",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"_dn\": \"cn=PFExpressionAdminGroup,ou=Groups,{{userBaseDN}}\",\n    \"objectClass\": [\n        \"groupOfNames\"\n    ],\n    \"cn\": [\n        \"PFAdminGroup\"\n    ],\n    \"member\": [\n        \"uid=administrator,ou=People,{{userBaseDN}}\",\n        \"uid=access2federate,ou=People,{{userBaseDN}}\"\n    ]\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{pdAdminUrl}}/directory/v1/"
+                  },
+                  "response": []
+                },
+                {
                   "name": "Create Group - PFCryptoGroup",
                   "event": [
                     {
